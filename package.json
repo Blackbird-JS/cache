@@ -1,0 +1,32 @@
+{
+  "name": "@blackbirdjs/cache",
+  "version": "0.1.0",
+  "description": "An asynchronous, Promise-wrapped IndexedDB cache engine with native Redis-style TTL expiration mechanics.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "vitest run"
+  },
+  "keywords": [
+    "blackbird",
+    "BlackbirdJS",
+    "cache",
+    "IndexedDB",
+    "ttl",
+    "local-first"
+  ],
+  "author": "ari dutta",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@vitest/browser": "^5.0.0",
+    "fake-indexeddb": "^6.2.5",
+    "happy-dom": "^20.14.3",
+    "vitest": "^5.0.0"
+  }
+}
