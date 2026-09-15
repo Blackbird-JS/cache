@@ -1,12 +1,12 @@
 export class BlackbirdCache {
   constructor(dbName = 'BlackbirdCacheDB', storeName = 'cachestore') {
     this.dbName = dbName;
-    this.storeName = storeName,
+    this.storeName = storeName;
     this.db = null;
   }
 
   _getDB() {
-    // If db is present, resolve imidiately
+    // If db is present, resolve it immediately
     if (this.db) return Promise.resolve(this.db);
 
     const dbVersion = 1;
